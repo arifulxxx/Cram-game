@@ -1,0 +1,17 @@
+body { background: #0f172a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 80px); 
+    grid-gap: 10px; 
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 8px;
+}
+.cell { 
+    width: 80px; height: 80px; 
+    background: #334155; 
+    cursor: pointer; 
+    border-radius: 4px;
+}
+.cell.occupied { background: #6366f1; cursor: not-allowed; }
+.cell:hover { background: #475569; }
